@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-   <link href="css/styles.css" rel="stylesheet" type="text/css">
-   <script src="js/jquery-2.2.4.js"></script>
-   <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Find Your Celebrity Match!</title>
   </head>
 
@@ -24,17 +23,21 @@
           <input id="age" class="form-control" type="text">
         </div>
 
-        <label>What gender are you interested in?</label>
-        <div class="form-group">
-          <input id="gender" class="form-control" type="text">
-        </div>
 
-        <button type="submit" class="btn">Submit</button>
+        <label>Gender Preference?</label>
+        <select class="form-control" id="gender">
+          <option> </option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Surprise Me!</option>
+        </select>
+
+        <button type="submit" class="btn">Find My Match!</button>
       </form>
       <div id="output">
       </div>
 
-      <div id="results">
+      <div id="final">
         <h3>Your celebrity match is...</h3>
         <p>Thank you for taking our survey!</p>
       </div>
@@ -49,9 +52,9 @@
         <p>Jeff Goldblum is your man.</p>
       </div>
 
-      <div id="michael">
+      <div id="tom">
         <img src="">
-        <p>Michael Fassbender is your man.</p>
+        <p>Tom Hardy is your man.</p>
       </div>
 
       <div id="emma">
@@ -66,7 +69,7 @@
 
       <div id="horse">
         <img src="">
-        <p></p>
+        <p>You probably like horses?</p>
       </div>
 
       </div>

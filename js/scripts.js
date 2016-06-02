@@ -1,39 +1,37 @@
 $(document).ready(function() {
-  $("form#questions").submit(function(event));
-
+  $("form#questions").submit(function(event) {
+    event.preventDefault();
     var name = $("#name").val();
     var age = $("#age").val();
     var gender = $("#gender").val();
 
     if (age < 18) {
+      $('#final').show();
       $('#underage').show();
-    }
 
-    else if (age > 40 && male)  {
+    } else if (age > 40 && gender === male)  {
+      $('#final').show();
       $('#jeff').show();
-    }
+      }
 
-    else if (age <= 40 && male)  {
-      $('#michael').show();
-    }
+      else if (age <= 40 && gender === male)  {
+        $('#final').show();
+        $('#tom').show();
+      }
 
-    else if (age <= 40 && female)  {
-      $('#emma').show();
+      else if (age <= 40 && gender === female)  {
+        $('#final').show();
+        $('#emma').show();
+      }
+      else if (age > 40 && gender === female)  {
+        $('#final').show();
+        $('#helen').show();
+      }
+      else {
+        $('#final').show();
+        $('#horse').show();
+      }
 
-    else if (age > 40 && female || name === Sam)  {
-      $('#helen').show();
-
-    else {
-      $('#horse').show();
-    }
-
-
-
-//  var result = $("Your name is " + name + " and you are " + age + " years old and interested in" + "gender")
-//  $("#results").text(result);
-
-    $("#results").show();
 
   });
-  event.preventDefault();
 });

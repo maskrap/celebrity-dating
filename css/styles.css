@@ -1,3 +1,8 @@
-#results {
+#jeff, #tom, #emma, #helen, #underage, #horse, #final {
   display: none;
+}
+
+
+.btn {
+  margin-top: 20px;
 }
