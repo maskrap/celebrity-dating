@@ -1,8 +1,18 @@
-#jeff, #tom, #emma, #helen, #underage, #horse, #final {
+#jeff, #tom, #emma, #helen, #underage, #horse, #final, #inputWarning1 {
   display: none;
 }
 
 
 .btn {
   margin-top: 20px;
+}
+
+img {
+    position: relative;
+    float: center;
+    width:  400px;
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }

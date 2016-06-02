@@ -9,21 +9,21 @@ $(document).ready(function() {
       $('#final').show();
       $('#underage').show();
 
-    } else if (age > 40 && gender === male)  {
-      $('#final').show();
-      $('#jeff').show();
-      }
+    } else if (age > 40 && gender === "male") {
+        $('#final').show();
+        $('#jeff').show();
+        }
 
-      else if (age <= 40 && gender === male)  {
+      else if (age <= 40 && gender === "male") {
         $('#final').show();
         $('#tom').show();
       }
 
-      else if (age <= 40 && gender === female)  {
+      else if (age <= 40 && gender === "female") {
         $('#final').show();
         $('#emma').show();
       }
-      else if (age > 40 && gender === female)  {
+      else if (age > 40 && gender === "female") {
         $('#final').show();
         $('#helen').show();
       }
