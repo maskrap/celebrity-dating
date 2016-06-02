@@ -4,6 +4,9 @@ $(document).ready(function() {
     var name = $("#name").val();
     var age = $("#age").val();
     var gender = $("#gender").val();
+    var movie = $("#movie").val();
+
+    $('#horse').hide();
 
     if (age < 18) {
       $('#final').show();
@@ -27,6 +30,12 @@ $(document).ready(function() {
         $('#final').show();
         $('#helen').show();
       }
+
+      else if (movie === "horror") {
+        $('#final').show();
+        $('#helen').show();
+      }
+
       else {
         $('#final').show();
         $('#horse').show();
